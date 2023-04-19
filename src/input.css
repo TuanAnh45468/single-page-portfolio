@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply text-[18px]
+    }
+
+    h1{
+        @apply text-[88px]
+    }
+
+    h2{
+        @apply text-[48px]
+    }
+
+    h3{
+        @apply text-[24px]
+    }
+}
