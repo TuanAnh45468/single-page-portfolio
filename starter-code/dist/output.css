@@ -423,19 +423,8 @@ video {
 }
 
 body {
+  font-family: Space Grotesk, sans-serif;
   font-size: 18px;
-}
-
-h1 {
-  font-size: 88px;
-}
-
-h2 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 24px;
 }
 
 *, ::before, ::after {
@@ -532,8 +521,52 @@ h3 {
   --tw-backdrop-sepia:  ;
 }
 
+.underline-green {
+  display: inline-block;
+  border-bottom-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: hsl(153 71% 59% / var(--tw-border-opacity));
+  padding-bottom: 0.5rem;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-\[60\%\] {
+  bottom: 60%;
+}
+
+.left-\[-28\%\] {
+  left: -28%;
+}
+
+.right-\[-55\%\] {
+  right: -55%;
+}
+
+.top-\[4\%\] {
+  top: 4%;
+}
+
+.top-\[8\%\] {
+  top: 8%;
+}
+
+.mb-52 {
+  margin-bottom: 13rem;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .min-h-screen {
@@ -544,26 +577,25 @@ h3 {
   flex-direction: column;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
-
-.items-center {
-  align-items: center;
+.justify-center {
+  justify-content: center;
 }
 
 .gap-5 {
   gap: 1.25rem;
 }
 
-.bg-dark-green {
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 0% 14% / var(--tw-bg-opacity));
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 8% / var(--tw-bg-opacity));
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-2xl {
@@ -575,9 +607,26 @@ h3 {
   font-weight: 700;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
+.text-grey {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 85% / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-green {
+  text-decoration-color: hsl(153, 71%, 59%);
 }
 
 .ring {
@@ -587,11 +636,166 @@ h3 {
 }
 
 @media (min-width: 375px) {
+  .min-\[375px\]\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .min-\[375px\]\:mr-4 {
+    margin-right: 1rem;
+  }
+
   .min-\[375px\]\:flex-col {
     flex-direction: column;
   }
 
   .min-\[375px\]\:items-center {
     align-items: center;
+  }
+
+  .min-\[375px\]\:gap-52 {
+    gap: 13rem;
+  }
+
+  .min-\[375px\]\:gap-6 {
+    gap: 1.5rem;
+  }
+
+  .min-\[375px\]\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .min-\[375px\]\:leading-10 {
+    line-height: 2.5rem;
+  }
+
+  .min-\[375px\]\:leading-7 {
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:bottom-\[68\%\] {
+    bottom: 68%;
+  }
+
+  .md\:right-\[-25\%\] {
+    right: -25%;
+  }
+
+  .md\:col-start-1 {
+    grid-column-start: 1;
+  }
+
+  .md\:col-end-3 {
+    grid-column-end: 3;
+  }
+
+  .md\:row-start-2 {
+    grid-row-start: 2;
+  }
+
+  .md\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .md\:ml-auto {
+    margin-left: auto;
+  }
+
+  .md\:mr-8 {
+    margin-right: 2rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-\[auto_1fr\] {
+    grid-template-rows: auto 1fr;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:text-left {
+    text-align: left;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:leading-\[72px\] {
+    line-height: 72px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .min-\[1440px\]\:left-\[-15\%\] {
+    left: -15%;
+  }
+
+  .min-\[1440px\]\:right-\[-11\%\] {
+    right: -11%;
+  }
+
+  .min-\[1440px\]\:top-\[6\%\] {
+    top: 6%;
+  }
+
+  .min-\[1440px\]\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .min-\[1440px\]\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .min-\[1440px\]\:col-start-2 {
+    grid-column-start: 2;
+  }
+
+  .min-\[1440px\]\:col-start-3 {
+    grid-column-start: 3;
+  }
+
+  .min-\[1440px\]\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .min-\[1440px\]\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .min-\[1440px\]\:text-center {
+    text-align: center;
+  }
+
+  .min-\[1440px\]\:text-\[88px\] {
+    font-size: 88px;
+  }
+
+  .min-\[1440px\]\:leading-\[88px\] {
+    line-height: 88px;
+  }
+
+  .min-\[1440px\]\:tracking-\[-2px\] {
+    letter-spacing: -2px;
   }
 }

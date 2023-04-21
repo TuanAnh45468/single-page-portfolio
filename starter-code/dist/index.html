@@ -21,113 +21,117 @@
     <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 <body class="min-h-screen bg-black text-white">
+<div class="relative min-h-screen overflow-hidden">
+    <img
+            alt="pattern ring"
+            class="absolute top-[8%] left-[-28%] min-[1440px]:left-[-15%] min-[1440px]:top-[6%]"
+            src="images/pattern-rings.svg"
+    />
+    <img
+            alt="pattern ring"
+            class="absolute bottom-[60%] right-[-55%] md:right-[-25%] md:bottom-[68%] min-[1440px]:right-[-11%]"
+            src="images/pattern-rings.svg"
+    />
 
 <!-- Header -->
-<header class="flex gap-5 min-[375px]:flex-col min-[375px]:items-center">
-    <p class="font-bold text-2xl">adamkeyes</p>
-    <picture class="flex gap-5">
-        <img alt="github icon" src="images/icon-github.svg">
-        <img alt="Frontend mentor icon" src="images/icon-frontend-mentor.svg">
-        <img alt="linkedin icon" src="images/icon-linkedin.svg">
-        <img alt="twitter icon" src="images/icon-twitter.svg">
-    </picture>
+<header class="grid min-h-screen justify-center md:grid-rows-[auto_1fr] md:mr-8 md:ml-8 md:grid-cols-2 md:gap-0 min-[375px]:mr-4 min-[375px]:ml-4 min-[1440px]:grid-cols-8 min-[375px]:gap-52">
+    <div class="flex gap-5 md:col-start-1 md:col-end-3 md:flex-row min-[1440px]:col-span-6 min-[1440px]:col-start-2 min-[375px]:flex-col min-[375px]:items-center">
+        <p class="text-2xl font-bold md:text-3xl">Tuan anh</p>
+        <picture class="flex gap-5 md:ml-auto">
+            <img alt="github icon" src="images/icon-github.svg"/>
+            <img alt="Frontend mentor icon" src="images/icon-frontend-mentor.svg"/>
+            <img alt="linkedin icon" src="images/icon-linkedin.svg"/>
+        </picture>
+    </div>
+
+    <div class="mb-52 flex flex-col md:row-start-2 md:my-auto min-[1440px]:col-span-4 min-[1440px]:col-start-3 min-[375px]:gap-6 min-[375px]:leading-10">
+        <h1 class="text-center font-bold md:leading-[72px] md:text-left md:text-7xl min-[375px]:text-[40px] min-[1440px]:text-[88px] min-[1440px]:leading-[88px] min-[1440px]:tracking-[-2px] min-[1440px]:text-center">Nice to
+            meet you! I'm
+            <span
+                    class="underline decoration-green">Tuan Anh.</span>
+        </h1>
+
+        <p class="text-center text-grey md:text-left min-[1440px]:text-center min-[375px]:leading-7 min-[1440px]:mb-24">
+            Based in VietNam, I'm a front-end developer passionate about building
+            accessible web apps that users love.
+        </p>
+
+        <div class="text-center md:text-left min-[1440px]:text-center">
+            <p class="text-center font-bold tracking-widest underline-green">
+                CONTACT ME
+            </p>
+        </div>
+    </div>
 </header>
-
-<!-- Hero -->
-<section>
-    <img alt="profile image on mobile" src="images/image-profile-mobile.webp">
-    <img alt="pattern ring" src="images/pattern-rings.svg">
-    <img alt="pattern circle" src="images/pattern-circle.svg">
-    <p>
-        Nice to meet you! I'm Adam Keyes. Based in the UK, I'm a front-end
-        developer passionate about building accessible web apps that users love.
-        Contact me
-    </p>
-</section>
-
+<hr>
 <!-- Skills -->
 <section>
     <div>
-        HTML <br>
+        HTML <br/>
         4 Years Experience
     </div>
 
     <div>
-        CSS <br>
+        CSS <br/>
         4 Years Experience
     </div>
 
     <div>
-        JavaScript <br>
+        JavaScript <br/>
         4 Years
     </div>
 
     <div>
-        Experience Accessibility <br>
+        Experience Accessibility <br/>
         4 Years Experience
     </div>
 
     <div>
-        React <br>
+        React <br/>
         3 Years Experience
     </div>
 
     <div>
-        Sass <br>
+        Sass <br/>
         3 Years Experience
     </div>
 </section>
 
 <!-- Project -->
 <section>
-    <div>
-        Projects Contact me
-    </div>
+    <div>Projects Contact me</div>
+
+    <div>Design portfolio HTML CSS View project View code</div>
+
+    <div>E-learning landing page HTML CSS View project View code</div>
+
+    <div>Todo web app HTML CSS JavaScript View project View code</div>
 
     <div>
-        Design portfolio HTML CSS View project View code
+        Entertainment web app HTML CSS JavaScript View project View code
     </div>
 
-    <div>
-        E-learning landing page HTML CSS View project View code
-    </div>
+    <div>Memory Game HTML CSS JavaScript View project View code</div>
 
-    <div>
-        Todo web app HTML CSS JavaScript View project View code
-    </div>
-
-    <div>
-        Entertainment web app HTML CSS
-        JavaScript View project View code
-    </div>
-
-    <div>
-        Memory Game HTML CSS JavaScript View project View code
-
-    </div>
-
-    <div>
-        Art gallery showcase HTML CSS JavaScript View project View code
-    </div>
+    <div>Art gallery showcase HTML CSS JavaScript View project View code</div>
 </section>
 
 <section>
     <h1>Contact</h1>
 
     <p>
-        I would love to hear about your project and how I could help.
-        Please fill in the form, and I’ll get back to you as soon as possible.
+        I would love to hear about your project and how I could help. Please
+        fill in the form, and I’ll get back to you as soon as possible.
     </p>
-
 
     <form>
         <label for="name">Name:</label>
-        <input id="name" name="name" required type="text"><br>
+        <input id="name" name="name" required type="text"/><br/>
         <label for="email">Email:</label>
-        <input id="email" name="email" required type="email"><br>
+        <input id="email" name="email" required type="email"/><br/>
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea><br>
-        <input type="submit" value="Send Message">
+        <textarea id="message" name="message" required></textarea><br/>
+        <input type="submit" value="Send Message"/>
     </form>
 </section>
 
