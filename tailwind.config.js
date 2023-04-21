@@ -22,6 +22,10 @@ module.exports = {
         "32px",
         { lineHeight: "40px", letterSpacing: -1, fontWeight: 700 },
       ],
+      "3m": [
+        "40px",
+        { lineHeight: "40px", letterSpacing: -1.14, fontWeight: 700 },
+      ],
       l: ["48px", { lineHeight: "56px", fontWeight: 700, letterSpacing: -1.5 }],
       xl: [
         "88px",
