@@ -16,6 +16,19 @@ module.exports = {
       laptop: "1140px",
     },
 
+    fontSize: {
+      m: ["24px", { lineHeight: "32px", fontWeight: 700 }],
+      "2m": [
+        "32px",
+        { lineHeight: "40px", letterSpacing: -1, fontWeight: 700 },
+      ],
+      l: ["48px", { lineHeight: "56px", fontWeight: 700, letterSpacing: -1.5 }],
+      xl: [
+        "88px",
+        { lineHeight: "88px", fontWeight: 700, letterSpacing: -2.5 },
+      ],
+    },
+
     extend: {
       fontFamily: {
         "space-grotesk": ["Space Grotesk", "sans-serif"],
