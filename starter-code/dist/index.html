@@ -29,35 +29,35 @@
     />
     <img
             alt="pattern ring"
-            class="absolute bottom-[68%] right-[-55%] md:right-[-25%] tablet:bottom-[68%] laptop:right-[-11%]"
+            class="absolute bottom-[68%] right-[-55%] tablet:bottom-[68%] laptop:right-[-11%] md:right-[-25%]"
             src="images/pattern-rings.svg"
     />
 
     <!-- Header -->
-    <header class="grid min-h-screen justify-center tablet:grid-rows-[auto_1fr] tablet:mr-8 tablet:ml-8 tablet:grid-cols-2 tablet:gap-0 mobile:mx-4 laptop:grid-cols-8 mobile:gap-52">
-        <div class="flex gap-5 tablet:col-start-1 tablet:col-end-3 tablet:flex-row laptop:col-span-6 laptop:col-start-2 mobile:flex-col mobile:items-center">
-            <p class="text-2xl font-bold tablet:text-3xl">Tuan anh</p>
-            <picture class="flex gap-5 tablet:ml-auto">
+    <header class="mobile:mx-4 tablet:mr-8 tablet:ml-8 grid min-h-screen tablet:grid-cols-2 laptop:grid-cols-8 justify-center tablet:gap-0 mobile:gap-52 tablet:grid-rows-[auto_1fr]">
+        <div class="laptop:col-span-6 tablet:col-start-1 laptop:col-start-2 tablet:col-end-3 flex tablet:flex-row mobile:flex-col mobile:items-center gap-5">
+            <p class="text-2xl tablet:text-3xl font-bold">Tuan anh</p>
+            <picture class="tablet:ml-auto flex gap-5">
                 <img alt="github icon" src="images/icon-github.svg"/>
                 <img alt="Frontend mentor icon" src="images/icon-frontend-mentor.svg"/>
                 <img alt="linkedin icon" src="images/icon-linkedin.svg"/>
             </picture>
         </div>
 
-        <div class="mb-52 flex flex-col tablet:row-start-2 tablet:my-auto laptop:col-span-4 laptop:col-start-3 mobile:gap-6 mobile:leading-10">
-            <h1 class="text-center font-bold tablet:leading-[72px] tablet:text-left tablet:text-7xl mobile:text-[40px] laptop:text-[88px] laptop:leading-[88px] laptop:tracking-[-2px] laptop:text-center">
+        <div class="laptop:col-span-4 laptop:col-start-3 tablet:row-start-2 tablet:my-auto mb-52 flex flex-col mobile:gap-6 mobile:leading-10">
+            <h1 class="tablet:text-left text-center laptop:text-center tablet:text-7xl font-bold tablet:leading-[72px] mobile:text-[40px] laptop:text-[88px] laptop:leading-[88px] laptop:tracking-[-2px]">
                 Nice to
                 meet you! I'm
                 <span
                         class="underline decoration-green">Tuan Anh.</span>
             </h1>
 
-            <p class="text-center text-grey tablet:text-left laptop:text-center mobile:leading-7 laptop:mb-24">
+            <p class="laptop:mb-24 tablet:text-left text-center laptop:text-center mobile:leading-7 text-grey">
                 Based in VietNam, I'm a front-end developer passionate about building
                 accessible web apps that users love.
             </p>
 
-            <div class="text-center tablet:text-left laptop:text-center">
+            <div class="tablet:text-left text-center laptop:text-center">
                 <p class="text-center font-bold tracking-widest underline-green">
                     CONTACT ME
                 </p>
@@ -66,7 +66,7 @@
     </header>
     <hr>
     <!-- Skills -->
-    <section class="mobile:mx-4 mobile:mb-[80px] mobile:mt-[40px] grid mobile:place-items-center text-center tablet:grid-cols-2 laptop:grid-cols-3 tablet:place-items-start tablet:text-left tablet:mx-8 laptop:mx-[165px] gap-y-16">
+    <section class="mobile:mx-4 tablet:mx-8 grid tablet:grid-cols-2 laptop:grid-cols-3 tablet:place-items-start mobile:place-items-center gap-y-16 tablet:text-left text-center mobile:mb-[80px] mobile:mt-[40px] laptop:mx-[165px]">
         <div>
             <span class="mobile:text-2m tablet:text-l">HTML</span> <br/>
             <span class="text-grey">Intermediate</span>
@@ -99,26 +99,32 @@
     </section>
 
     <!-- Project -->
-    <section class="grid mobile:gap-y-10 mobile:mx-4">
-        <div class="flex">
-            <p class="mobile:text-3m">Projects</p>
-            <p class="underline-green ml-auto">Contact me</p>
+    <section class="mobile:mx-4 grid tablet:grid-cols-2 mobile:place-items-center mobile:gap-y-10 laptop:mx-[165px]">
+
+        <div class="tablet:col-span-2 flex items-center justify-start w-full">
+            <p class="mobile:text-3m tablet:text-2l">Projects</p>
+            <p class="ml-auto underline-green">Contact me</p>
         </div>
 
         <div class="flex flex-col gap-5">
 
-            <picture>
-                <img src="images/thumbnail-project-1-small.webp" alt="Thumbnail project" class="block mobile:w-[343px] mobile:h-[253px]"
+            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+                <img src="images/thumbnail-project-1-small.webp" alt="Thumbnail project" class="block"
                      srcset="images/thumbnail-project-1-small.webp 375w,
                  images/thumbnail-project-1-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-            </picture>
+
+                <div class="flex gap-8 overlay">
+                    <span class="underline-green">View project</span>
+                    <span class="underline-green">View code</span>
+                </div>
+            </div>
 
             <div>
                 <h3 class="text-m">Design portfolio </h3>
                 <p class="text-grey">HTML CSS</p>
             </div>
 
-            <div class="flex gap-8">
+            <div class="flex laptop:hidden gap-8">
                 <span class="underline-green">View project</span>
                 <span class="underline-green">View code</span>
             </div>
@@ -126,90 +132,115 @@
         </div>
 
         <div class="flex flex-col gap-5">
-            <picture>
-                <img src="images/thumbnail-project-2-small.webp" alt="Thumbnail project"  class="block mobile:w-[343px] mobile:h-[253px]"
+            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+                <img src="images/thumbnail-project-2-small.webp" alt="Thumbnail project"  class="block"
                      srcset="images/thumbnail-project-2-small.webp 375w,
                  images/thumbnail-project-2-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-            </picture>
+
+                <div class="flex gap-8 overlay">
+                    <span class="underline-green">View project</span>
+                    <span class="underline-green">View code</span>
+                </div>
+            </div>
 
             <div>
                 <h3 class="text-m">E-learning landing page</h3>
                 <p class="text-grey">HTML CSS</p>
             </div>
 
-            <div class="flex gap-8">
+            <div class="flex laptop:hidden gap-8">
                 <span class="underline-green">View project</span>
                 <span class="underline-green">View code</span>
             </div>
         </div>
 
         <div class="flex flex-col gap-5">
-            <picture>
-                <img src="images/thumbnail-project-3-small.webp" alt="Thumbnail project" class="block mobile:w-[343px] mobile:h-[253px]"
+            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+                <img src="images/thumbnail-project-3-small.webp" alt="Thumbnail project" class="block"
                      srcset="images/thumbnail-project-3-small.webp 375w,
                  images/thumbnail-project-3-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-            </picture>
+
+                <div class="flex gap-8 overlay">
+                    <span class="underline-green">View project</span>
+                    <span class="underline-green">View code</span>
+                </div>
+            </div>
 
             <div>
                 <h3 class="text-m">Todo web app</h3>
                 <p class="text-grey">HTML CSS JavaScript</p>
             </div>
 
-            <div class="flex gap-8">
+            <div class="flex laptop:hidden gap-8">
                 <span class="underline-green">View project</span>
                 <span class="underline-green">View code</span>
             </div>
         </div>
 
         <div class="flex flex-col gap-5">
-            <picture>
-                <img src="images/thumbnail-project-4-small.webp" alt="Thumbnail project" class="block mobile:w-[343px] mobile:h-[253px]"
+            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+                <img src="images/thumbnail-project-4-small.webp" alt="Thumbnail project" class="block"
                      srcset="images/thumbnail-project-4-small.webp 375w,
                  images/thumbnail-project-4-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-            </picture>
+
+                <div class="flex gap-8 overlay">
+                    <span class="underline-green">View project</span>
+                    <span class="underline-green">View code</span>
+                </div>
+            </div>
 
             <div>
                 <h3 class="text-m">Entertainment web app</h3>
                 <p class="text-grey">HTML CSS JavaScript</p>
             </div>
 
-            <div class="flex gap-8">
+            <div class="flex laptop:hidden gap-8">
                 <span class="underline-green">View project</span>
                 <span class="underline-green">View code</span>
             </div>
         </div>
 
         <div class="flex flex-col gap-5">
-            <picture>
-                <img src="images/thumbnail-project-5-small.webp" alt="Thumbnail project" class="block mobile:w-[343px] mobile:h-[253px]"
+            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+                <img src="images/thumbnail-project-5-small.webp" alt="Thumbnail project" class="block"
                      srcset="images/thumbnail-project-5-small.webp 375w,
                  images/thumbnail-project-5-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-            </picture>
+
+                <div class="flex gap-8 overlay">
+                    <span class="underline-green">View project</span>
+                    <span class="underline-green">View code</span>
+                </div>
+            </div>
 
             <div>
                 <h3 class="text-m">Memory Game</h3>
                 <p class="text-grey">HTML CSS JavaScript</p>
             </div>
 
-            <div class="flex gap-8">
+            <div class="flex laptop:hidden gap-8">
                 <span class="underline-green">View project</span>
                 <span class="underline-green">View code</span>
             </div>
         </div>
 
         <div class="flex flex-col gap-5">
-            <picture>
-                <img src="images/thumbnail-project-6-small.webp" alt="Thumbnail project" class="block mobile:w-[343px] mobile:h-[253px]"
+            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+                <img src="images/thumbnail-project-6-small.webp" alt="Thumbnail project" class="block"
                      srcset="images/thumbnail-project-6-small.webp 375w,
                  images/thumbnail-project-6-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-            </picture>
+
+                <div class="flex gap-8 overlay">
+                    <span class="underline-green">View project</span>
+                    <span class="underline-green">View code</span>
+                </div>
+            </div>
 
             <div>
                 <h3 class="text-m">Art gallery showcase</h3>
                 <p class="text-grey">HTML CSS JavaScript</p>
             </div>
 
-            <div class="flex gap-8">
+            <div class="flex laptop:hidden gap-8">
                 <span class="underline-green">View project</span>
                 <span class="underline-green">View code</span>
             </div>

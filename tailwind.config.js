@@ -27,6 +27,10 @@ module.exports = {
         { lineHeight: "40px", letterSpacing: -1.14, fontWeight: 700 },
       ],
       l: ["48px", { lineHeight: "56px", fontWeight: 700, letterSpacing: -1.5 }],
+      "2l": [
+        "72px",
+        { lineHeight: "72px", fontWeight: 700, letterSpacing: -2.05 },
+      ],
       xl: [
         "88px",
         { lineHeight: "88px", fontWeight: 700, letterSpacing: -2.5 },
