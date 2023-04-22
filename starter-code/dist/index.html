@@ -17,266 +17,274 @@
             rel="stylesheet"
     />
 
-    <link href="output.css" rel="stylesheet"/>
-    <title>Frontend Mentor | Single-page developer portfolio</title>
+    <!--    <link href="output.css" rel="stylesheet"/>-->
+    <link href="build.css" rel="stylesheet"/>
+    <title>Single-page portfolio</title>
 </head>
 <body class="min-h-screen bg-black text-white">
-<div class="relative min-h-screen overflow-hidden">
+
+<!-- Header -->
+<header class="mobile:mx-4 relative overflow-hidden tablet:mr-8 tablet:ml-8 grid min-h-screen tablet:grid-cols-2 laptop:grid-cols-8 justify-center tablet:gap-0 mobile:gap-52 tablet:grid-rows-[auto_1fr]">
     <img
             alt="pattern ring"
-            class="absolute top-[8%] left-[-28%] laptop:left-[-15%] laptop:top-[6%]"
+            class="absolute top-[19%] left-[-51%] tablet:top-[5%] laptop:left-[-15%] laptop:top-[6%]"
             src="images/pattern-rings.svg"
     />
     <img
             alt="pattern ring"
-            class="absolute bottom-[68%] right-[-55%] tablet:bottom-[68%] laptop:right-[-11%] md:right-[-25%]"
+            class="absolute bottom-[14%] right-[-55%] tablet:bottom-[22%] tablet:right-[-36%] laptop:right-[-11%] md:right-[-25%]"
             src="images/pattern-rings.svg"
     />
-
-    <!-- Header -->
-    <header class="mobile:mx-4 tablet:mr-8 tablet:ml-8 grid min-h-screen tablet:grid-cols-2 laptop:grid-cols-8 justify-center tablet:gap-0 mobile:gap-52 tablet:grid-rows-[auto_1fr]">
-        <div class="laptop:col-span-6 tablet:col-start-1 laptop:col-start-2 tablet:col-end-3 flex tablet:flex-row mobile:flex-col mobile:items-center gap-5">
-            <p class="text-2xl tablet:text-3xl font-bold">Tuan anh</p>
-            <picture class="tablet:ml-auto flex gap-5">
-                <img alt="github icon" src="images/icon-github.svg"/>
-                <img alt="Frontend mentor icon" src="images/icon-frontend-mentor.svg"/>
-                <img alt="linkedin icon" src="images/icon-linkedin.svg"/>
-            </picture>
+    <div class="laptop:col-span-6 tablet:col-start-1 laptop:col-start-2 tablet:col-end-3 flex tablet:flex-row mobile:flex-col mobile:items-center gap-5">
+        <p class="text-2xl tablet:text-3xl font-bold">Tuan anh</p>
+        <div class="tablet:ml-auto flex gap-5">
+            <a href="https://github.com/TuanAnh45468">
+                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+                          fill-rule="evenodd"/>
+                </svg>
+            </a>
+            <a href="https://www.frontendmentor.io/profile/TuanAnh45468">
+                <svg class="hover:fill-green fill-white" height="23" width="26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anh-t-481b03164/">
+                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+                          fill-rule="evenodd"/>
+                </svg>
+            </a>
         </div>
+    </div>
 
-        <div class="laptop:col-span-4 laptop:col-start-3 tablet:row-start-2 tablet:my-auto mb-52 flex flex-col mobile:gap-6 mobile:leading-10">
-            <h1 class="tablet:text-left text-center laptop:text-center tablet:text-7xl font-bold tablet:leading-[72px] mobile:text-[40px] laptop:text-[88px] laptop:leading-[88px] laptop:tracking-[-2px]">
-                Nice to
-                meet you! I'm
-                <span
-                        class="underline decoration-green">Tuan Anh.</span>
-            </h1>
+    <div class="laptop:col-span-4 laptop:col-start-3 tablet:row-start-2 tablet:my-auto mb-52 flex flex-col mobile:gap-6 mobile:leading-10">
+        <h1 class="tablet:text-left text-center laptop:text-center tablet:text-7xl font-bold tablet:leading-[72px] mobile:text-[40px] laptop:text-[88px] laptop:leading-[88px] laptop:tracking-[-2px]">
+            Nice to
+            meet you! I'm
+            <span
+                    class="underline decoration-green">Tuan Anh.</span>
+        </h1>
 
-            <p class="laptop:mb-24 tablet:text-left text-center laptop:text-center mobile:leading-7 text-grey">
-                Based in VietNam, I'm a front-end developer passionate about building
-                accessible web apps that users love.
-            </p>
-
-            <div class="tablet:text-left text-center laptop:text-center">
-                <p class="text-center font-bold tracking-widest underline-green">
-                    CONTACT ME
-                </p>
-            </div>
-        </div>
-    </header>
-    <hr>
-    <!-- Skills -->
-    <section class="mobile:mx-4 tablet:mx-8 grid tablet:grid-cols-2 laptop:grid-cols-3 tablet:place-items-start mobile:place-items-center gap-y-16 tablet:text-left text-center mobile:mb-[80px] mobile:mt-[40px] laptop:mx-[165px]">
-        <div>
-            <span class="mobile:text-2m tablet:text-l">HTML</span> <br/>
-            <span class="text-grey">Intermediate</span>
-        </div>
-
-        <div>
-            <span class="mobile:text-2m tablet:text-l">CSS</span><br/>
-            <span class="text-grey">Intermediate</span>
-        </div>
-
-        <div>
-            <span class="mobile:text-2m tablet:text-l">JavaScript</span><br/>
-            <span class="text-grey">Intermediate</span>
-        </div>
-
-        <div>
-            <span class="mobile:text-2m tablet:text-l">NextJs </span> <br/>
-            <span class="text-grey">Intermediate</span>
-        </div>
-
-        <div>
-            <span class="mobile:text-2m tablet:text-l">React</span> <br/>
-            <span class="text-grey">Intermediate</span>
-        </div>
-
-        <div>
-            <span class="mobile:text-2m tablet:text-l">Golang</span> <br/>
-            <span class="text-grey">Intermediate</span>
-        </div>
-    </section>
-
-    <!-- Project -->
-    <section class="mobile:mx-4 grid tablet:grid-cols-2 mobile:place-items-center mobile:gap-y-10 laptop:mx-[165px]">
-
-        <div class="tablet:col-span-2 flex w-full items-center justify-start">
-            <p class="mobile:text-3m tablet:text-2l">Projects</p>
-            <p class="ml-auto underline-green">Contact me</p>
-        </div>
-
-        <div class="flex flex-col gap-5">
-
-            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-                <img src="images/thumbnail-project-1-small.webp" alt="Thumbnail project" class="block"
-                     srcset="images/thumbnail-project-1-small.webp 375w,
-                 images/thumbnail-project-1-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-
-                <div class="flex gap-8 overlay">
-                    <span class="underline-green">View project</span>
-                    <span class="underline-green">View code</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-m">Design portfolio </h3>
-                <p class="text-grey">HTML CSS</p>
-            </div>
-
-            <div class="flex laptop:hidden gap-8">
-                <span class="underline-green">View project</span>
-                <span class="underline-green">View code</span>
-            </div>
-
-        </div>
-
-        <div class="flex flex-col gap-5">
-            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-                <img src="images/thumbnail-project-2-small.webp" alt="Thumbnail project"  class="block"
-                     srcset="images/thumbnail-project-2-small.webp 375w,
-                 images/thumbnail-project-2-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-
-                <div class="flex gap-8 overlay">
-                    <span class="underline-green">View project</span>
-                    <span class="underline-green">View code</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-m">E-learning landing page</h3>
-                <p class="text-grey">HTML CSS</p>
-            </div>
-
-            <div class="flex laptop:hidden gap-8">
-                <span class="underline-green">View project</span>
-                <span class="underline-green">View code</span>
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-5">
-            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-                <img src="images/thumbnail-project-3-small.webp" alt="Thumbnail project" class="block"
-                     srcset="images/thumbnail-project-3-small.webp 375w,
-                 images/thumbnail-project-3-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-
-                <div class="flex gap-8 overlay">
-                    <span class="underline-green">View project</span>
-                    <span class="underline-green">View code</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-m">Todo web app</h3>
-                <p class="text-grey">HTML CSS JavaScript</p>
-            </div>
-
-            <div class="flex laptop:hidden gap-8">
-                <span class="underline-green">View project</span>
-                <span class="underline-green">View code</span>
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-5">
-            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-                <img src="images/thumbnail-project-4-small.webp" alt="Thumbnail project" class="block"
-                     srcset="images/thumbnail-project-4-small.webp 375w,
-                 images/thumbnail-project-4-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-
-                <div class="flex gap-8 overlay">
-                    <span class="underline-green">View project</span>
-                    <span class="underline-green">View code</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-m">Entertainment web app</h3>
-                <p class="text-grey">HTML CSS JavaScript</p>
-            </div>
-
-            <div class="flex laptop:hidden gap-8">
-                <span class="underline-green">View project</span>
-                <span class="underline-green">View code</span>
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-5">
-            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-                <img src="images/thumbnail-project-5-small.webp" alt="Thumbnail project" class="block"
-                     srcset="images/thumbnail-project-5-small.webp 375w,
-                 images/thumbnail-project-5-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-
-                <div class="flex gap-8 overlay">
-                    <span class="underline-green">View project</span>
-                    <span class="underline-green">View code</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-m">Memory Game</h3>
-                <p class="text-grey">HTML CSS JavaScript</p>
-            </div>
-
-            <div class="flex laptop:hidden gap-8">
-                <span class="underline-green">View project</span>
-                <span class="underline-green">View code</span>
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-5">
-            <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-                <img src="images/thumbnail-project-6-small.webp" alt="Thumbnail project" class="block"
-                     srcset="images/thumbnail-project-6-small.webp 375w,
-                 images/thumbnail-project-6-large.webp 768w," sizes="(max-width:375px) 375px, 768px">
-
-                <div class="flex gap-8 overlay">
-                    <span class="underline-green">View project</span>
-                    <span class="underline-green">View code</span>
-                </div>
-            </div>
-
-            <div>
-                <h3 class="text-m">Art gallery showcase</h3>
-                <p class="text-grey">HTML CSS JavaScript</p>
-            </div>
-
-            <div class="flex laptop:hidden gap-8">
-                <span class="underline-green">View project</span>
-                <span class="underline-green">View code</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid tablet:grid-cols-4 laptop:grid-cols-8 laptop:justify-items-start justify-items-center mobile:gap-5 mobile:px-4 bg-dark-green mobile:mt-[80px]">
-
-        <h1 class="laptop:col-span-2 tablet:col-span-4 tablet:col-start-1 laptop:col-start-2 mobile:text-3m tablet:text-2l laptop:hidden">Contact</h1>
-
-        <p class="tablet:col-span-2 tablet:col-start-2 laptop:text-left text-center text-grey laptop:hidden">
-            I would love to hear about your project and how I could help. Please
-            fill in the form, and I’ll get back to you as soon as possible.
+        <p class="laptop:mb-24 tablet:text-left text-center laptop:text-center mobile:leading-7 text-grey">
+            Based in VietNam, I'm a full-stack developer passionate about building
+            accessible web apps that users love.
         </p>
 
-        <div class="max-laptop:hidden laptop:col-span-2 laptop:col-start-2 pt-[84px]">
-            <h1 class="text-xl mb-[36px]">Contact</h1>
-            <p class="text-grey">I would love to hear about your project and how I could help. Please
-                fill in the form, and I’ll get back to you as soon as possible.
+        <div class="tablet:text-left text-center laptop:text-center">
+            <p class="text-center font-bold tracking-widest underline-green" onclick="scrollToContact()">
+                CONTACT ME
             </p>
         </div>
+    </div>
+</header>
+<hr>
+<!-- Skills -->
+<section
+        class="mobile:mx-4 tablet:mx-8 grid tablet:grid-cols-2 laptop:grid-cols-3 tablet:place-items-start mobile:place-items-center gap-y-16 tablet:text-left text-center mobile:mb-[80px] mobile:mt-[40px] laptop:mx-[165px]">
+    <div>
+        <span class="mobile:text-2m tablet:text-l">HTML</span> <br/>
+        <span class="text-grey">Intermediate</span>
+    </div>
 
-        <form class="tablet:col-span-2 laptop:col-span-3 tablet:col-start-2 laptop:col-start-5 flex flex-col laptop:row-start-1 laptop:pt-[84px]">
-            <label for="name"></label>
-            <input id="name" class="pl-6 underline-grey hover:underline-green" name="name" required type="text" placeholder="NAME"/><br/>
+    <div>
+        <span class="mobile:text-2m tablet:text-l">CSS</span><br/>
+        <span class="text-grey">Intermediate</span>
+    </div>
 
-            <label for="email"></label>
-            <input id="email" class="pl-6 underline-grey hover:underline-green" name="email" required type="email" placeholder="EMAIL"/><br/>
+    <div>
+        <span class="mobile:text-2m tablet:text-l">JavaScript</span><br/>
+        <span class="text-grey">Intermediate</span>
+    </div>
 
-            <label for="message"></label>
-            <textarea id="message"  class="pl-6 outline-none bg-dark-green mobile:w-[343px] mobile:h-[107px] underline-grey hover:underline-green" name="message" required placeholder="MESSAGE"></textarea><br/>
+    <div>
+        <span class="mobile:text-2m tablet:text-l">NextJs </span> <br/>
+        <span class="text-grey">Intermediate</span>
+    </div>
 
-            <input type="submit" value="SEND MESSAGE" class="mobile:w-auto self-end underline-green"/>
-        </form>
-    </section>
+    <div>
+        <span class="mobile:text-2m tablet:text-l">React</span> <br/>
+        <span class="text-grey">Intermediate</span>
+    </div>
 
-    <footer class="bg-dark-green">adamkeyes</footer>
+    <div>
+        <span class="mobile:text-2m tablet:text-l">Golang</span> <br/>
+        <span class="text-grey">Intermediate</span>
+    </div>
+</section>
+
+<!-- Project -->
+<section class="mobile:mx-4 grid tablet:grid-cols-2 mobile:place-items-center mobile:gap-y-10 laptop:mx-[165px]">
+
+    <div class="tablet:col-span-2 flex w-full items-center justify-start">
+        <p class="mobile:text-3m tablet:text-2l">Projects</p>
+        <p class="ml-auto underline-green" onclick="scrollToContact()">Contact me</p>
+    </div>
+
+    <div class="flex flex-col gap-5">
+
+        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+            <img alt="Preview card" class="block object-cover w-full h-full" src="images/preview-card.webp">
+
+            <div class="flex gap-8 overlay">
+                <a class="underline-green" href="https://tuananhproductpreviewcard.netlify.app/">View
+                    project</a>
+                <a class="underline-green" href="https://github.com/TuanAnh45468/productPreviewCard#my-process">View
+                    code</a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-m">Project preview card</h3>
+            <p class="text-grey">HTML CSS TailwindCSS</p>
+        </div>
+
+        <div class="flex laptop:hidden gap-8">
+            <a class="underline-green" href="https://tuananhproductpreviewcard.netlify.app/">View project</a>
+            <a class="underline-green" href="https://github.com/TuanAnh45468/productPreviewCard#my-process">View
+                code</a>
+        </div>
+
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+            <img alt="Order summary card" class="w-full h-full block object-cover" src="images/order-summary.webp">
+
+            <div class="flex gap-8 overlay">
+                <a class="underline-green" href="https://tuananhordersummary.netlify.app/">View project</a>
+                <a class="underline-green" href="https://github.com/TuanAnh45468/OrderSummaryComponent#links">View
+                    code</a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-m">Order summary card</h3>
+            <p class="text-grey">HTML TailwindCSS</p>
+        </div>
+
+        <div class="flex laptop:hidden gap-8">
+            <a class="underline-green" href="https://tuananhordersummary.netlify.app/">View project</a>
+            <a class="underline-green" href="https://github.com/TuanAnh45468/OrderSummaryComponent#links">View code</a>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+            <img alt="pomodoro timer" class="w-full h-full block object-cover" src="images/podomoro-timer.webp">
+
+            <div class="flex gap-8 overlay">
+                <a class="underline-green" href="https://tuananh45468.github.io/PodomoroTimer/docs/">View project</a>
+                <a class="underline-green" href="https://github.com/TuanAnh45468/PodomoroTimer">View code</a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-m">Pomodoro Timer</h3>
+            <p class="text-grey">HTML CSS JavaScript</p>
+        </div>
+
+        <div class="flex laptop:hidden gap-8">
+            <a class="underline-green" href="https://tuananh45468.github.io/PodomoroTimer/docs/">View project</a>
+            <a class="underline-green" href="https://github.com/TuanAnh45468/PodomoroTimer">View code</a>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+            <img alt="Thumbnail project" class="block" sizes="(max-width:375px) 375px, 768px"
+                 src="images/thumbnail-project-4-small.webp" srcset="images/thumbnail-project-4-small.webp 375w,
+                 images/thumbnail-project-4-large.webp 768w,">
+
+            <div class="flex gap-8 overlay">
+                <span class="underline-green">View project</span>
+                <span class="underline-green">View code</span>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-m">Entertainment web app</h3>
+            <p class="text-grey">HTML CSS JavaScript</p>
+        </div>
+
+        <div class="flex laptop:hidden gap-8">
+            <span class="underline-green">View project</span>
+            <span class="underline-green">View code</span>
+        </div>
+    </div>
+
+</section>
+
+<!--Contact-->
+<section
+        class="grid tablet:grid-cols-4 laptop:grid-cols-8 laptop:justify-items-start justify-items-center mobile:gap-5 mobile:px-4 bg-dark-green mobile:mt-[80px]"
+        id="contact-section">
+
+    <h1 class="laptop:col-span-2 tablet:col-span-4 tablet:col-start-1 laptop:col-start-2 laptop:hidden mobile:text-3m tablet:text-2l">
+        Contact</h1>
+
+    <p class="tablet:col-span-2 tablet:col-start-2 laptop:hidden laptop:text-left text-center text-grey">
+        I would love to hear about your project and how I could help. Please
+        fill in the form, and I’ll get back to you as soon as possible.
+    </p>
+
+    <div class="laptop:col-span-2 laptop:col-start-2 max-laptop:hidden pt-[84px]">
+        <h1 class="text-xl mb-[36px]">Contact</h1>
+        <p class="text-grey">I would love to hear about your project and how I could help. Please
+            fill in the form, and I’ll get back to you as soon as possible.
+        </p>
+    </div>
+
+    <form class="tablet:col-span-2 laptop:col-span-3 tablet:col-start-2 laptop:col-start-5 laptop:row-start-1 flex flex-col laptop:pt-[84px]"
+          netlify>
+        <label for="name"></label>
+        <input class="pl-6 underline-grey focus:input-underline" id="name" name="name"
+               pattern="[A-Za-z\s]+"
+               placeholder="NAME"
+               required
+               title="Only letters and spaces are allowed"
+               type="text"/><br/>
+
+        <label for="email"></label>
+        <input class="pl-6 underline-grey focus:input-underline" id="email" name="email"
+               placeholder="EMAIL" required
+               type="email"/><br/>
+
+        <label for="message"></label>
+        <textarea
+                class="pl-6 outline-none bg-dark-green mobile:w-[343px] mobile:h-[107px] underline-grey focus:input-underline"
+                id="message"
+                name="message" placeholder="MESSAGE" required></textarea><br/>
+
+        <input class="mobile:w-auto self-end underline-green" type="submit" value="SEND MESSAGE"/>
+    </form>
+</section>
+
+<footer class="mobile:px-7 bg-dark-green mobile:pt-[80px] mobile:pb-[40px] laptop:grid laptop:grid-cols-8 laptop:justify-items-start">
+
+    <div class="laptop:col-span-5 laptop:col-start-2 flex tablet:flex-row mobile:flex-col mobile:items-center gap-5 laptop:w-full">
+        <p class="text-2xl tablet:text-3xl font-bold">Tuan anh</p>
+        <div class="tablet:ml-auto flex gap-5">
+            <a href="https://github.com/TuanAnh45468">
+                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+                          fill-rule="evenodd"/>
+                </svg>
+            </a>
+            <a href="https://www.frontendmentor.io/profile/TuanAnh45468">
+                <svg class="hover:fill-green fill-white" height="23" width="26" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z"/>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/anh-t-481b03164/">
+                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+                          fill-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
