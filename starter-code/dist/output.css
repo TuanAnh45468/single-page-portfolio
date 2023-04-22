@@ -762,27 +762,6 @@ input {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.hover\:underline-green:hover {
-  display: inline-block;
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: hsl(153 71% 59% / var(--tw-border-opacity));
-  padding-bottom: 0.5rem;
-}
-
-.hover\:underline-green:hover:hover {
-  --tw-text-opacity: 1;
-  color: hsl(153 71% 59% / var(--tw-text-opacity));
-}
-
-.hover\:input-underline:hover {
-  display: inline-block;
-  border-bottom-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: hsl(153 71% 59% / var(--tw-border-opacity));
-  padding-bottom: 0.5rem;
-}
-
 .focus\:input-underline:focus {
   display: inline-block;
   border-bottom-width: 2px;
@@ -793,11 +772,6 @@ input {
 
 .hover\:fill-green:hover {
   fill: hsl(153, 71%, 59%);
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
 @media not all and (min-width: 1440px) {
