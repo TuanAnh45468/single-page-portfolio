@@ -6,11 +6,19 @@
     body {
         @apply text-[18px] font-space-grotesk
     }
+
+    input {
+        @apply bg-dark-green mobile:w-[343px] mobile:h-[43px] outline-none
+    }
 }
 
 @layer components {
     .underline-green {
-        @apply inline-block border-b-4 border-green pb-2
+        @apply inline-block border-b-2 border-green pb-2
+    }
+
+    .underline-grey {
+        @apply inline-block border-b-2 border-grey pb-2
     }
 
     .project-card {

@@ -101,7 +101,7 @@
     <!-- Project -->
     <section class="mobile:mx-4 grid tablet:grid-cols-2 mobile:place-items-center mobile:gap-y-10 laptop:mx-[165px]">
 
-        <div class="tablet:col-span-2 flex items-center justify-start w-full">
+        <div class="tablet:col-span-2 flex w-full items-center justify-start">
             <p class="mobile:text-3m tablet:text-2l">Projects</p>
             <p class="ml-auto underline-green">Contact me</p>
         </div>
@@ -247,25 +247,36 @@
         </div>
     </section>
 
-    <section>
-        <h1>Contact</h1>
+    <section class="grid tablet:grid-cols-4 laptop:grid-cols-8 laptop:justify-items-start justify-items-center mobile:gap-5 mobile:px-4 bg-dark-green mobile:mt-[80px]">
 
-        <p>
+        <h1 class="laptop:col-span-2 tablet:col-span-4 tablet:col-start-1 laptop:col-start-2 mobile:text-3m tablet:text-2l laptop:hidden">Contact</h1>
+
+        <p class="tablet:col-span-2 tablet:col-start-2 laptop:text-left text-center text-grey laptop:hidden">
             I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
         </p>
 
-        <form>
-            <label for="name">Name:</label>
-            <input id="name" name="name" required type="text"/><br/>
-            <label for="email">Email:</label>
-            <input id="email" name="email" required type="email"/><br/>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br/>
-            <input type="submit" value="Send Message"/>
+        <div class="max-laptop:hidden laptop:col-span-2 laptop:col-start-2 pt-[84px]">
+            <h1 class="text-xl mb-[36px]">Contact</h1>
+            <p class="text-grey">I would love to hear about your project and how I could help. Please
+                fill in the form, and I’ll get back to you as soon as possible.
+            </p>
+        </div>
+
+        <form class="tablet:col-span-2 laptop:col-span-3 tablet:col-start-2 laptop:col-start-5 flex flex-col laptop:row-start-1 laptop:pt-[84px]">
+            <label for="name"></label>
+            <input id="name" class="pl-6 underline-grey hover:underline-green" name="name" required type="text" placeholder="NAME"/><br/>
+
+            <label for="email"></label>
+            <input id="email" class="pl-6 underline-grey hover:underline-green" name="email" required type="email" placeholder="EMAIL"/><br/>
+
+            <label for="message"></label>
+            <textarea id="message"  class="pl-6 outline-none bg-dark-green mobile:w-[343px] mobile:h-[107px] underline-grey hover:underline-green" name="message" required placeholder="MESSAGE"></textarea><br/>
+
+            <input type="submit" value="SEND MESSAGE" class="mobile:w-auto self-end underline-green"/>
         </form>
     </section>
 
-    <footer>adamkeyes</footer>
+    <footer class="bg-dark-green">adamkeyes</footer>
 </body>
 </html>
