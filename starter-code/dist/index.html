@@ -22,66 +22,98 @@
     <title>Single-page portfolio</title>
 </head>
 <body class="min-h-screen bg-black text-white">
-
 <!-- Header -->
-<header class="mobile:mx-4 relative overflow-hidden tablet:mr-8 tablet:ml-8 grid min-h-screen tablet:grid-cols-2 laptop:grid-cols-8 justify-center tablet:gap-0 mobile:gap-52 tablet:grid-rows-[auto_1fr]">
+<header
+        class="relative grid min-h-screen justify-center overflow-hidden mobile:mx-4 mobile:gap-52 tablet:ml-8 tablet:mr-8 tablet:grid-cols-2 tablet:grid-rows-[auto_1fr] tablet:gap-0 laptop:grid-cols-8"
+>
     <img
             alt="pattern ring"
-            class="absolute top-[19%] left-[-51%] tablet:top-[5%] laptop:left-[-15%] laptop:top-[6%]"
+            class="absolute left-[-51%] top-[19%] tablet:top-[5%] laptop:left-[-15%] laptop:top-[6%]"
             src="images/pattern-rings.svg"
     />
     <img
             alt="pattern ring"
-            class="absolute bottom-[14%] right-[-55%] tablet:bottom-[22%] tablet:right-[-36%] laptop:right-[-11%] md:right-[-25%]"
+            class="md:right-[-25%] absolute bottom-[14%] right-[-55%] tablet:bottom-[22%] tablet:right-[-36%] laptop:right-[-11%]"
             src="images/pattern-rings.svg"
     />
-    <div class="laptop:col-span-6 tablet:col-start-1 laptop:col-start-2 tablet:col-end-3 flex tablet:flex-row mobile:flex-col mobile:items-center gap-5">
+    <div
+            class="flex gap-5 mobile:flex-col mobile:items-center tablet:col-start-1 tablet:col-end-3 tablet:flex-row laptop:col-span-6 laptop:col-start-2"
+    >
         <p class="text-2xl tablet:text-3xl font-bold">Tuan anh</p>
-        <div class="tablet:ml-auto flex gap-5">
+        <div class="flex gap-5 tablet:ml-auto">
             <a href="https://github.com/TuanAnh45468">
-                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
-                          fill-rule="evenodd"/>
+                <svg
+                        class="fill-white hover:fill-green"
+                        height="24"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+                            fill-rule="evenodd"
+                    />
                 </svg>
             </a>
             <a href="https://www.frontendmentor.io/profile/TuanAnh45468">
-                <svg class="hover:fill-green fill-white" height="23" width="26" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z"/>
+                <svg
+                        class="fill-white hover:fill-green"
+                        height="23"
+                        width="26"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z"
+                    />
                 </svg>
             </a>
             <a href="https://www.linkedin.com/in/anh-t-481b03164/">
-                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
-                          fill-rule="evenodd"/>
+                <svg
+                        class="fill-white hover:fill-green"
+                        height="24"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+                            fill-rule="evenodd"
+                    />
                 </svg>
             </a>
         </div>
     </div>
 
-    <div class="laptop:col-span-4 laptop:col-start-3 tablet:row-start-2 tablet:my-auto mb-52 flex flex-col mobile:gap-6 mobile:leading-10">
-        <h1 class="tablet:text-left text-center laptop:text-center tablet:text-7xl font-bold tablet:leading-[72px] mobile:text-[40px] laptop:text-[88px] laptop:leading-[88px] laptop:tracking-[-2px]">
-            Nice to
-            meet you! I'm
-            <span
-                    class="underline decoration-green">Tuan Anh.</span>
+    <div
+            class="mb-52 flex flex-col mobile:gap-6 mobile:leading-10 tablet:row-start-2 tablet:my-auto laptop:col-span-4 laptop:col-start-3"
+    >
+        <h1
+                class="tablet:text-7xl text-center font-bold mobile:text-[40px] tablet:text-left tablet:leading-[72px] laptop:text-center laptop:text-[88px] laptop:leading-[88px] laptop:tracking-[-2px]"
+        >
+            Nice to meet you! I'm
+            <span class="underline decoration-green">Tuan Anh.</span>
         </h1>
 
-        <p class="laptop:mb-24 tablet:text-left text-center laptop:text-center mobile:leading-7 text-grey">
+        <p
+                class="text-center text-grey mobile:leading-7 tablet:text-left laptop:mb-24 laptop:text-center"
+        >
             Based in VietNam, I'm a full-stack developer passionate about building
             accessible web apps that users love.
         </p>
 
-        <div class="tablet:text-left text-center laptop:text-center">
-            <p class="text-center font-bold tracking-widest underline-green" onclick="scrollToContact()">
+        <div class="text-center tablet:text-left laptop:text-center">
+            <p
+                    class="underline-green text-center font-bold tracking-widest"
+                    onclick="scrollToContact()"
+            >
                 CONTACT ME
             </p>
         </div>
     </div>
 </header>
-<hr>
+<hr/>
 <!-- Skills -->
 <section
-        class="mobile:mx-4 tablet:mx-8 grid tablet:grid-cols-2 laptop:grid-cols-3 tablet:place-items-start mobile:place-items-center gap-y-16 tablet:text-left text-center mobile:mb-[80px] mobile:mt-[40px] laptop:mx-[165px]">
+        class="grid gap-y-16 text-center mobile:mx-4 mobile:mb-[80px] mobile:mt-[40px] mobile:place-items-center tablet:mx-8 tablet:grid-cols-2 tablet:place-items-start tablet:text-left laptop:mx-[165px] laptop:grid-cols-3"
+>
     <div>
         <span class="mobile:text-2m tablet:text-l">HTML</span> <br/>
         <span class="text-grey">Intermediate</span>
@@ -114,24 +146,37 @@
 </section>
 
 <!-- Project -->
-<section class="mobile:mx-4 grid tablet:grid-cols-2 mobile:place-items-center mobile:gap-y-10 laptop:mx-[165px]">
-
-    <div class="tablet:col-span-2 flex w-full items-center justify-start">
+<section
+        class="grid mobile:mx-4 mobile:place-items-center mobile:gap-y-10 tablet:grid-cols-2 laptop:mx-[165px]"
+>
+    <div class="flex w-full items-center justify-start tablet:col-span-2">
         <p class="mobile:text-3m tablet:text-2l">Projects</p>
-        <p class="ml-auto underline-green" onclick="scrollToContact()">Contact me</p>
+        <p class="underline-green ml-auto" onclick="scrollToContact()">
+            Contact me
+        </p>
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/time-tracking-preview.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/time-tracking-preview.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://timetracking-dashboard-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/time-tracking-dashboard">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://timetracking-dashboard-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/time-tracking-dashboard"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -140,26 +185,84 @@
             <p class="text-grey">HTML CSS TailwindCSS JavaScript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://timetracking-dashboard-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/time-tracking-dashboard">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://timetracking-dashboard-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/time-tracking-dashboard"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/faq-accordion-section.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/article-preview-component.webp">
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://faq-accordion-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/faq-accordian-card"
+                >View code</a
+                >
+            </div>
+        </div>
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://article-preview-component-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/article-preview-component">View
-                    code</a>
+        <div>
+            <h3 class="text-m">FAQ Accordion Section</h3>
+            <p class="text-grey">HTML CSS TailwindCSS JavaScript</p>
+        </div>
+
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://faq-accordion-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/faq-accordian-card"
+            >View code</a
+            >
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/article-preview-component.webp"
+            />
+
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://article-preview-component-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/article-preview-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -168,25 +271,41 @@
             <p class="text-grey">HTML CSS TailwindCSS JavaScript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://article-preview-component-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/article-preview-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://article-preview-component-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/article-preview-component"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/skilled-elearning-preview.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/skilled-elearning-preview.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://main--skilled-elearning-landingpage-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/skilled-elarning-landing-page">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://main--skilled-elearning-landingpage-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/skilled-elarning-landing-page"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -195,24 +314,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://main--skilled-elearning-landingpage-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/skilled-elarning-landing-page">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://main--skilled-elearning-landingpage-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/skilled-elarning-landing-page"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/ping-coming-soon-page.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/ping-coming-soon-page.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://ping-comming-soon-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/ping-comming-soon-page">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://ping-comming-soon-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/ping-comming-soon-page"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -221,24 +357,41 @@
             <p class="text-grey">HTML CSS TailwindCSS Javascript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://ping-comming-soon-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/ping-comming-soon-page">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://ping-comming-soon-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/ping-comming-soon-page"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/intro-component-signup.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/intro-component-signup.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://intro-component-signup-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/intro-component-with-sign-up">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://intro-component-signup-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/intro-component-with-sign-up"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -247,24 +400,41 @@
             <p class="text-grey">HTML CSS TailwindCSS Javascript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://intro-component-signup-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/intro-component-with-sign-up">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://intro-component-signup-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/intro-component-with-sign-up"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/statics-preview-component.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/statics-preview-component.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://stats-preview-component-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/stats-previewcard-component">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://stats-preview-component-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/stats-previewcard-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -273,24 +443,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://stats-preview-component-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/stats-previewcard-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://stats-preview-component-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/stats-previewcard-component"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/four-card-feature-section.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/four-card-feature-section.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://four-card-feature-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/four-card-features-section">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://four-card-feature-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/four-card-features-section"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -299,24 +486,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://four-card-feature-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/four-card-features-section">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://four-card-feature-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/four-card-features-section"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/single-price-grid-component.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/single-price-grid-component.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://single-price-grid-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/sing-price-grid-component">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://single-price-grid-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/sing-price-grid-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -325,24 +529,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://single-price-grid-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/sing-price-grid-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://single-price-grid-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/sing-price-grid-component"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/huddle-landing-page.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/huddle-landing-page.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://huddle-landing-page-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/huddle-landing-page">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://huddle-landing-page-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/huddle-landing-page"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -351,24 +572,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://huddle-landing-page-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/huddle-landing-page">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://huddle-landing-page-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/huddle-landing-page"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/nft-preview-card.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/nft-preview-card.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://nft-preview-card-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/nft-previewcard-component">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://nft-preview-card-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/nft-previewcard-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -377,24 +615,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://nft-preview-card-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/nft-previewcard-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://nft-preview-card-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/nft-previewcard-component"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/column-preview-card.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/column-preview-card.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://column-preview-card-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/column-preview-card">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://column-preview-card-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/column-preview-card"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -403,25 +658,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://column-preview-card-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/column-preview-card">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://column-preview-card-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/column-preview-card"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/interactive-rating-component.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/interactive-rating-component.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://interactive-rating-component-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/interactive-rating-component">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://interactive-rating-component-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/interactive-rating-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -430,26 +701,41 @@
             <p class="text-grey">HTML CSS TailwindCSS Javascript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://interactive-rating-component-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/interactive-rating-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://interactive-rating-component-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/interactive-rating-component"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/social-proof-section.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/social-proof-section.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://social-proof-section-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/social-proof-section">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://social-proof-section-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/social-proof-section"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -458,26 +744,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://social-proof-section-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/social-proof-section">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://social-proof-section-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/social-proof-section"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/result-summary-preview.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/result-summary-preview.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://result-summary-component-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/result-summary-component">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://result-summary-component-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/result-summary-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -486,26 +787,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://result-summary-component-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/result-summary-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://result-summary-component-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/result-summary-component"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="skill e-learning"
+                    class="block h-full w-full object-cover"
+                    src="images/profile-card-component.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="skill e-learning" class="block object-cover w-full h-full"
-                 src="images/profile-card-component.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://profile-card-component-tuananh.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/profile-card-component">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://profile-card-component-tuananh.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/profile-card-component"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -514,25 +830,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://profile-card-component-tuananh.netlify.app/">View
-                project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/profile-card-component">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://profile-card-component-tuananh.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/profile-card-component"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="Preview card"
+                    class="block h-full w-full object-cover"
+                    src="images/preview-card.webp"
+            />
 
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="Preview card" class="block object-cover w-full h-full" src="images/preview-card.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://tuananhproductpreviewcard.netlify.app/">View
-                    project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/productPreviewCard#my-process">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://tuananhproductpreviewcard.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/productPreviewCard#my-process"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -541,22 +873,41 @@
             <p class="text-grey">HTML CSS TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://tuananhproductpreviewcard.netlify.app/">View project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/productPreviewCard#my-process">View
-                code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://tuananhproductpreviewcard.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/productPreviewCard#my-process"
+            >View code</a
+            >
         </div>
-
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="Order summary card" class="w-full h-full block object-cover" src="images/order-summary.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="Order summary card"
+                    class="block h-full w-full object-cover"
+                    src="images/order-summary.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://tuananhordersummary.netlify.app/">View project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/OrderSummaryComponent#links">View
-                    code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://tuananhordersummary.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/OrderSummaryComponent#links"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -565,19 +916,41 @@
             <p class="text-grey">HTML TailwindCSS</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://tuananhordersummary.netlify.app/">View project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/OrderSummaryComponent#links">View code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://tuananhordersummary.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/OrderSummaryComponent#links"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
-            <img alt="pomodoro timer" class="w-full h-full block object-cover" src="images/podomoro-timer.webp">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="pomodoro timer"
+                    class="block h-full w-full object-cover"
+                    src="images/podomoro-timer.webp"
+            />
 
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://tuananh45468.github.io/PodomoroTimer/docs/">View project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/PodomoroTimer">View code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://tuananh45468.github.io/PodomoroTimer/docs/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/PodomoroTimer"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -586,20 +959,41 @@
             <p class="text-grey">HTML CSS JavaScript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://tuananh45468.github.io/PodomoroTimer/docs/">View project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/PodomoroTimer">View code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://tuananh45468.github.io/PodomoroTimer/docs/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/PodomoroTimer"
+            >View code</a
+            >
         </div>
     </div>
 
     <div class="flex flex-col gap-5">
-        <div class="project-card mobile:w-[343px] mobile:h-[253px] laptop:w-[540px] laptop:h-[400px]">
+        <div
+                class="project-card mobile:h-[253px] mobile:w-[343px] laptop:h-[400px] laptop:w-[540px]"
+        >
+            <img
+                    alt="portfolio website"
+                    class="block h-full w-full object-cover"
+                    src="images/portfolio-web.webp"
+            />
 
-            <img alt="portfolio website" class="w-full h-full block object-cover" src="images/portfolio-web.webp">
-
-            <div class="flex gap-8 overlay">
-                <a class="underline-green" href="https://tuananhportfolio.netlify.app/">View project</a>
-                <a class="underline-green" href="https://github.com/TuanAnh45468/single-page-portfolio">View code</a>
+            <div class="overlay flex gap-8">
+                <a
+                        class="underline-green"
+                        href="https://tuananhportfolio.netlify.app/"
+                >View project</a
+                >
+                <a
+                        class="underline-green"
+                        href="https://github.com/TuanAnh45468/single-page-portfolio"
+                >View code</a
+                >
             </div>
         </div>
 
@@ -608,80 +1002,139 @@
             <p class="text-grey">HTML TailwindCSS JavaScript</p>
         </div>
 
-        <div class="flex laptop:hidden gap-8">
-            <a class="underline-green" href="https://tuananhportfolio.netlify.app/">View project</a>
-            <a class="underline-green" href="https://github.com/TuanAnh45468/single-page-portfolio">View code</a>
+        <div class="flex gap-8 laptop:hidden">
+            <a
+                    class="underline-green"
+                    href="https://tuananhportfolio.netlify.app/"
+            >View project</a
+            >
+            <a
+                    class="underline-green"
+                    href="https://github.com/TuanAnh45468/single-page-portfolio"
+            >View code</a
+            >
         </div>
     </div>
-
 </section>
 
 <!--Contact-->
 <section
-        class="grid tablet:grid-cols-4 laptop:grid-cols-8 laptop:justify-items-start justify-items-center mobile:gap-5 mobile:px-4 bg-dark-green mobile:mt-[80px]"
-        id="contact-section">
+        class="grid justify-items-center bg-dark-green mobile:mt-[80px] mobile:gap-5 mobile:px-4 tablet:grid-cols-4 laptop:grid-cols-8 laptop:justify-items-start"
+        id="contact-section"
+>
+    <h1
+            class="mobile:text-3m tablet:col-span-4 tablet:col-start-1 tablet:text-2l laptop:col-span-2 laptop:col-start-2 laptop:hidden"
+    >
+        Contact
+    </h1>
 
-    <h1 class="laptop:col-span-2 tablet:col-span-4 tablet:col-start-1 laptop:col-start-2 laptop:hidden mobile:text-3m tablet:text-2l">
-        Contact</h1>
-
-    <p class="tablet:col-span-2 tablet:col-start-2 laptop:hidden laptop:text-left text-center text-grey">
+    <p
+            class="text-center text-grey tablet:col-span-2 tablet:col-start-2 laptop:hidden laptop:text-left"
+    >
         I would love to hear about your project and how I could help. Please
         fill in the form, and I’ll get back to you as soon as possible.
     </p>
 
-    <div class="laptop:col-span-2 laptop:col-start-2 max-laptop:hidden pt-[84px]">
-        <h1 class="text-xl mb-[36px]">Contact</h1>
-        <p class="text-grey">I would love to hear about your project and how I could help. Please
+    <div
+            class="pt-[84px] max-laptop:hidden laptop:col-span-2 laptop:col-start-2"
+    >
+        <h1 class="mb-[36px] text-xl">Contact</h1>
+        <p class="text-grey">
+            I would love to hear about your project and how I could help. Please
             fill in the form, and I’ll get back to you as soon as possible.
         </p>
     </div>
 
-    <form class="tablet:col-span-2 laptop:col-span-3 tablet:col-start-2 laptop:col-start-5 laptop:row-start-1 flex flex-col laptop:pt-[84px]"
-          method="post" name="contact"
-          netlify>
+    <form
+            class="flex flex-col tablet:col-span-2 tablet:col-start-2 laptop:col-span-3 laptop:col-start-5 laptop:row-start-1 laptop:pt-[84px]"
+            method="post"
+            name="contact"
+            netlify
+    >
         <label for="name"></label>
-        <input class="pl-6 underline-grey focus:input-underline" id="name" name="name"
-               pattern="[A-Za-z\s]+"
-               placeholder="NAME"
-               required
-               title="Only letters and spaces are allowed"
-               type="text"/><br/>
+        <input
+                class="underline-grey focus:input-underline pl-6"
+                id="name"
+                name="name"
+                pattern="[A-Za-z\s]+"
+                placeholder="NAME"
+                required
+                title="Only letters and spaces are allowed"
+                type="text"
+        /><br/>
 
         <label for="email"></label>
-        <input class="pl-6 underline-grey focus:input-underline" id="email" name="email"
-               placeholder="EMAIL" required
-               type="email"/><br/>
+        <input
+                class="underline-grey focus:input-underline pl-6"
+                id="email"
+                name="email"
+                placeholder="EMAIL"
+                required
+                type="email"
+        /><br/>
 
         <label for="message"></label>
         <textarea
-                class="pl-6 outline-none bg-dark-green mobile:w-[343px] mobile:h-[107px] underline-grey focus:input-underline"
+                class="underline-grey focus:input-underline bg-dark-green pl-6 outline-none mobile:h-[107px] mobile:w-[343px]"
                 id="message"
-                name="message" placeholder="MESSAGE" required></textarea><br/>
+                name="message"
+                placeholder="MESSAGE"
+                required
+        ></textarea
+        ><br/>
 
-        <input class="mobile:w-auto self-end underline-green" type="submit" value="SEND MESSAGE"/>
+        <input
+                class="underline-green self-end mobile:w-auto"
+                type="submit"
+                value="SEND MESSAGE"
+        />
     </form>
 </section>
 
-<footer class="mobile:px-7 bg-dark-green mobile:pt-[80px] mobile:pb-[40px] laptop:grid laptop:grid-cols-8 laptop:justify-items-start">
-
-    <div class="laptop:col-span-5 laptop:col-start-2 flex tablet:flex-row mobile:flex-col mobile:items-center gap-5 laptop:w-full">
+<footer
+        class="bg-dark-green mobile:px-7 mobile:pb-[40px] mobile:pt-[80px] laptop:grid laptop:grid-cols-8 laptop:justify-items-start"
+>
+    <div
+            class="flex gap-5 mobile:flex-col mobile:items-center tablet:flex-row laptop:col-span-5 laptop:col-start-2 laptop:w-full"
+    >
         <p class="text-2xl tablet:text-3xl font-bold">Tuan anh</p>
-        <div class="tablet:ml-auto flex gap-5">
+        <div class="flex gap-5 tablet:ml-auto">
             <a href="https://github.com/TuanAnh45468">
-                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
-                          fill-rule="evenodd"/>
+                <svg
+                        class="fill-white hover:fill-green"
+                        height="24"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+                            fill-rule="evenodd"
+                    />
                 </svg>
             </a>
             <a href="https://www.frontendmentor.io/profile/TuanAnh45468">
-                <svg class="hover:fill-green fill-white" height="23" width="26" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z"/>
+                <svg
+                        class="fill-white hover:fill-green"
+                        height="23"
+                        width="26"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M13.084.23a.751.751 0 0 0-.736.75v14.267a.75.75 0 1 0 1.5 0V.98a.75.75 0 0 0-.763-.75ZM24.44 4.504a.752.752 0 0 0-.284.064l-6.44 2.875a.752.752 0 0 0 0 1.37l6.44 2.884a.75.75 0 0 0 .612-1.369L19.861 8.13l4.907-2.191a.753.753 0 0 0 .38-.99.752.752 0 0 0-.708-.444ZM1.371 9.663a.752.752 0 0 0-.74.938C2.41 17.447 8.603 22.23 15.685 22.23a.75.75 0 1 0 0-1.501A14.053 14.053 0 0 1 2.083 10.225a.75.75 0 0 0-.712-.561v-.001Z"
+                    />
                 </svg>
             </a>
             <a href="https://www.linkedin.com/in/anh-t-481b03164/">
-                <svg class="hover:fill-green fill-white" height="24" width="25" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
-                          fill-rule="evenodd"/>
+                <svg
+                        class="fill-white hover:fill-green"
+                        height="24"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                            d="M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+                            fill-rule="evenodd"
+                    />
                 </svg>
             </a>
         </div>
